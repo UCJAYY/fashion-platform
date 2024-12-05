@@ -1,0 +1,27 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% tailwind_css %}
+  <title>Fashion Platform</title>
+</head>
+
+<body class="font-serif leading-normal tracking-normal">
+  <div class="relative min-h-screen bg-cover bg-center bg-no-repeat">
+    <section class="flex items-center justify-center h-screen">
+      {% include 'fashionUI/home.html' %}
+    </section>
+    <section>
+      <div class="container mx-auto">
+        {% include 'fashionUI/footer.html' %}
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
